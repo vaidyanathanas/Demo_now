@@ -8,7 +8,7 @@ Ext.define('DemoNow.view.Main', {
         fullscreen : true,
         defaultBackButtonText : '',
 
-      
+     //nav starts here !!!
 
         navigationBar : {
             ui : 'title',
