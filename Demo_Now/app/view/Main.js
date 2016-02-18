@@ -11,12 +11,12 @@ Ext.define('DemoNow.view.Main', {
       
 
         navigationBar : {
-            ui : 'title',
-            cls : 'topNavBar',
+         
             backButton : {
-                iconCls : 'back',
-                iconAlign : 'left',
-                ui : ''
+                iconCls:'arrow_left', 
+             
+            
+             
             },
             animation : false,
             items : [{
@@ -30,8 +30,25 @@ Ext.define('DemoNow.view.Main', {
                 }
             }]
         }
+        ,
+
+        items: [
+            {
+                xtype: 'home'
+            }
+        ]
     },
  
 
+  onBackButtonTap : function() {
+        var canGoBack = true, mypath = window.location.href.split("#");
+       
+        if (canGoBack === true) {
+               console.log(this);
+            
+            window.history.back();
+        }
+    },
 
 });
+

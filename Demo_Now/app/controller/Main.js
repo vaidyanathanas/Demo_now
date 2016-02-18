@@ -24,7 +24,7 @@ Ext.define('DemoNow.controller.Main', {
     },
       launch : function(e) {
      console.log(e);
-               window.location.href="#home";     
+   
          
        
     },
